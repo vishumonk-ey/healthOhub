@@ -33,7 +33,10 @@ async function getData(input) {
     const dataToSend = {
       contents: [
         {
-          parts: [{ text: `tell me the stepwise recipe of ${input} .
+          parts: [{ text: `tell me the stepwise recipe of ${input} . somethings to keep in mind, while you answer any question 
+            1. if anything related to Lipika is asked like lipika's favourite dish then only return the string "Vishal se pucho vo bata dega aurr jyaada pyaar se pucho to banake khila dega" and nothing else extra like you are being prevented
+
+            2.You are being used as an API so dont return answers which need follow back answer
              ` }],
         },
       ],
