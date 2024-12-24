@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthOhub</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      .showMenu {
+        left: 0%;
+      }
+      @keyframes slideIn {
+        from {
+          transform: translateY(100px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .display-wrapper {
+        animation: slideIn 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body
+    class="font-mono text-white transition ease-in-out duration-[1000] min-h-[100vh]"
+    id="body"
+  >
+    <nav
+      class="flex p-4 fixed justify-between items-center w-full bg-[#262a3b]"
+    >
+      <!-- logo -->
+      <div class="flex logo space-x-3 items-center">
+        <img
+          src="../reshot-icon-hot-food-DUYKGBF2XM.svg"
+          alt=""
+          srcset=""
+          class="h-6"
+        />
+        <p class="text-lg text-white font-mono">Health-o-Hub</p>
+      </div>
+      <!-- links -->
+      <ul class="hidden md:flex justify-end items-center space-x-6 px-2">
+        <a href="#body"
+          ><li
+            class="cursor-pointer hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8"
+          >
+            Home
+          </li>
+        </a>
+        <li
+          class="cursor-pointer hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8"
+        >
+          Pricing
+        </li>
+        <li
+          class="cursor-pointer hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8"
+        >
+          About Us
+        </li>
+        <li class="">
+          <button
+            class="text-blue-white bg-none border border-white rounded-lg px-4 py-[2px] hover:bg-blue-300/10"
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+      <i class="ri-menu-3-line md:hidden" id="menu"></i>
+      <i class="ri-close-large-line hidden closeMenu"></i>
+      <!-- menu for mobile -->
+      <div
+        class="bg-[#262a3b] absolute w-full top-14 py-2 right-[-100%]"
+        id="mobile-menu"
+      >
+        <ul class="flex flex-col items-center space-y-4">
+          <a href="#body"
+            ><li
+              class="hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8 cursor-pointer"
+              href="#body"
+            >
+              Home
+            </li></a
+          >
+          <li
+            class="hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8 cursor-pointer"
+          >
+            Pricing
+          </li>
+          <li
+            class="hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8 cursor-pointer"
+          >
+            About Us
+          </li>
+          <li class="pt-4">
+            <button
+              class="text-white py-1 px-3 underline underline-offset-4 decoration-blue-300 cursor-pointer hover:text-blue-300 hover:decoration-white"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main section -->
+    <div
+      class="flex flex-col items-center bg-[#262a3b] pt-16 md:flex-row md:justify-around pb-0 w-full"
+    >
+      <div class="flex flex-col items-center max-w-48 space-y-4 md:max-w-64">
+        <h1
+          class="font-extrabold text-3xl text-center"
+          style="word-spacing: -6px"
+        >
+          Get your Recipes and Nutritional info all at a single place !
+        </h1>
+        <p class="text-sm font-semibold text-center">
+          From Indian to Mexican,Health-o-Hub gives you recipes personalized for
+          you and which are tasty.
+        </p>
+        <button
+          class="bg-orange-400 py-1 px-4 rounded-xl text-[#262a3b] text-sm hover:text-orange-500 hover:bg-white"
+        >
+          Download the app
+        </button>
+      </div>
+      <!-- Image wrapper -->
+      <div class="flex items-center justify-center p-10 pb-0 sm:w-1/2 lg:w-1/2">
+        <img
+          src="../9253c0d1-1bdc-4979-b376-4072ec5c190d.webp"
+          alt=""
+          class="object-contain rounded-t-3xl w-full"
+        />
+      </div>
+    </div>
+    <!-- details about recipe section -->
+    <div
+      class="wrapper flex flex-col text-[#262a3b] p-6 space-y-2 md:flex-row md:items-top md:justify-between"
+    >
+      <div class="inputWrapper">
+        <div class="input flex items-center justify-evenly space-x-3">
+          <p class="font-bold shrink-0">Find recipe :</p>
+          <input
+            type="text"
+            class="border-[#262a3b] border rounded-lg text-blue-300 font-sans py-1 px-4 shadow-lg flex-shrink min-w-[50px]"
+            value="Dal makhani"
+          />
+          <button type="submit" href="#">
+            <i class="ri-search-line text-blue-600 font-extrabold search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="display-wrapper w-full p-3 pt-0 lg:w-1/2">
+        <p class="shadow-lg p-2 rounded-lg min-h-[500px]">
+          Your steps to delicious dish will be shown here...
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="../healthohub.js"></script>
+</html>
