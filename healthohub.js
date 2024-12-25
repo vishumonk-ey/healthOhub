@@ -1,5 +1,4 @@
 
-console.log(process.env);
 let display = document.querySelector(".display-wrapper").querySelector("p");
 let input=document.querySelector("input[type='text']")
 const submitBtn=document.querySelector(".search")
