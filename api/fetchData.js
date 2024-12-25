@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const apiKey = process.env.API_KEY; // Access the hidden API key
   const apiUrl = process.env.ENDPOINT; // External API URL without query parameters for POST
 
